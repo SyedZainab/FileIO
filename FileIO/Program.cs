@@ -36,7 +36,7 @@ namespace FileIO
                 string str = "";
                 Console.Write("\n The content of the file is  :\n", n);
                 
-                //reading each line of the string
+                //Reading each line of the string
                 while ((str = sr.ReadLine()) != null)
                 {
                     Console.WriteLine(" {0} ", str);
