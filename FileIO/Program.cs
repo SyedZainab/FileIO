@@ -11,7 +11,7 @@ namespace FileIO
             string[] ArrayLines;
             int n, i;
 
-            Console.Write(" Create a file and write an array of strings  :\n\n");
+            Console.Write("Create a file and write an array of strings  :\n\n");
             
             //If the file already exists, delete it.
             if (File.Exists(fileName))
@@ -19,7 +19,7 @@ namespace FileIO
                 File.Delete(fileName);
             }
 
-            Console.Write(" Input number of lines to write in the file  :");
+            Console.Write("Input number of lines to write in the file: ");
             n = Convert.ToInt32(Console.ReadLine());
             ArrayLines = new string[n];
             Console.Write(" Input {0} strings below :\n", n);
@@ -34,7 +34,7 @@ namespace FileIO
             using (StreamReader sr = File.OpenText(fileName))
             {
                 string str = "";
-                Console.Write("\n The content of the file is  :\n", n);
+                Console.Write("\n The content of the file is:\n", n);
                 
                 //Reading each line of the string
                 while ((str = sr.ReadLine()) != null)
